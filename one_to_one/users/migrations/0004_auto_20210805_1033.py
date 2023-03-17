@@ -12,12 +12,12 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterModelOptions(
             name='profile',
-            options={'verbose_name': 'Дополнительное поле', 'verbose_name_plural': 'Дополнительные поля'},
+            options={'verbose_name': 'Additional field', 'verbose_name_plural': 'Additional fields'},
         ),
         migrations.AlterField(
             model_name='profile',
             name='bio',
-            field=models.TextField(default=2, verbose_name='Биография'),
+            field=models.TextField(default=2, verbose_name='Bio'),
             preserve_default=False,
         ),
     ]
