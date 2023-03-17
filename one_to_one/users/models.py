@@ -7,17 +7,17 @@ from django.dispatch import receiver
 User = get_user_model()
 
 class Profile(models.Model):
-    # Создаём связь со стандартной моделью пользователя
+    # Create a relationship with the default user model
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     bio = models.TextField(
-        'Биография',
+        'Bio',
         blank=True,
         null=True,
     )
 
     class Meta:
-        verbose_name = 'Дополнительное поле'
-        verbose_name_plural = 'Дополнительные поля'
+        verbose_name = 'Additional field'
+        verbose_name_plural = 'Additional fields'
 
 
 @receiver(post_save, sender=User)
