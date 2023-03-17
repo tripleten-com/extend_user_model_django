@@ -18,12 +18,12 @@ class Migration(migrations.Migration):
             name='Profile',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('added_field', models.TextField(verbose_name='Добавленое поле')),
+                ('added_field', models.TextField(verbose_name='Added field')),
                 ('user', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
             options={
-                'verbose_name': 'Расширенная модель пользователя',
-                'verbose_name_plural': 'Расширение модели пользователя',
+                'verbose_name': 'Extended user model',
+                'verbose_name_plural': 'Extending the user model',
             },
         ),
     ]
