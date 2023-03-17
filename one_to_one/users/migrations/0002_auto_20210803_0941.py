@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='profile',
             name='added_field',
-            field=models.TextField(blank=True, null=True, verbose_name='Добавленое поле'),
+            field=models.TextField(blank=True, null=True, verbose_name='Added field'),
         ),
     ]
